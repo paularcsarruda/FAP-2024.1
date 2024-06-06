@@ -1,0 +1,4 @@
+puts("informe seu nome") 
+nome = gets
+
+puts(nome)
