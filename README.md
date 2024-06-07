@@ -11,3 +11,8 @@ Bem-vindo ao repositório dedicado ao curso FAP 2024.1 - Back-end em Ruby.
 - **Início:** 04 de junho de 2024
 
 Este repositório contém materiais, códigos e informações relevantes para o curso de Back-end em Ruby. Fique à vontade para explorar!
+
+### Ruby Basics
+
+  - [x] [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
+  - [x] [GoRails - Ruby for Beginners](https://gorails.com/series/ruby-for-beginners)
