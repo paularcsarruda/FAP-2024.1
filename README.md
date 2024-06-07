@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://github.com/paularcsarruda/FAP-2024.1/assets/122739036/1bf4101d-5dbc-4545-a0ad-a6fca3eabc93" alt="Banner-ruby">
+  <img src="https://github.com/paularcsarruda/FAP-2024.1/assets/122739036/90513779-c914-4203-a8ef-7e8ed30a87ab" alt="Banner-ruby">
 </div>
 
 # FAP-2024.1 (Softex Recife)
@@ -16,3 +16,4 @@ Este repositório contém materiais, códigos e informações relevantes para o 
 
   - [x] [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
   - [x] [GoRails - Ruby for Beginners](https://gorails.com/series/ruby-for-beginners)
+
