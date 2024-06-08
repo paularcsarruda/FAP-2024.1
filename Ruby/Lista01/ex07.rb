@@ -1,6 +1,8 @@
-# Escreva um programa que recebe como entrada um número de três dígitos, separa o número em seus dígitos individuais e
-# imprime os dígitos separados um dos outros por um. (Sugestão: use os operadores de divisão e módulo).
-# Por exemplo, se o usuário digitar 349 o programa deve imprimir: “3 4 9”
+=begin
+Escreva um programa que recebe como entrada um número de três dígitos, separa o número em seus dígitos individuais e
+imprime os dígitos separados um dos outros por um. (Sugestão: use os operadores de divisão e módulo).
+Por exemplo, se o usuário digitar 349 o programa deve imprimir: “3 4 9”
+=end
 
 puts("Informe um número de três dígitos: ")
 numero = gets.chomp.to_i

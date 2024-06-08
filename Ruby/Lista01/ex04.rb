@@ -1,5 +1,7 @@
-# Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a  temperatura em graus Celsius.
-# C = (5 * (F-32) / 9).
+=begin
+Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a  temperatura em graus Celsius.
+C = (5 * (F-32) / 9).
+=end
 
 puts("Informe a temperatura em Fahrenheit: ")
 F = gets.chomp.to_f

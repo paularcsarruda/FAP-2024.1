@@ -1,5 +1,7 @@
-# Escreva um programa que leia três valores inteiros que serão armazenados nas variáveis x, y
-# e z. Então, o programa calcula e exibe a soma e o produto desses valores.
+=begin
+Escreva um programa que leia três valores inteiros que serão armazenados nas variáveis x, y e z.
+Então, o programa calcula e exibe a soma e o produto desses valores.
+=end
 
 puts("Informe um número: ")
 x = gets.chomp.to_i

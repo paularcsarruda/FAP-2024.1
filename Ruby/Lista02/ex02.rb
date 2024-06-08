@@ -1,7 +1,9 @@
-# Recebendo como entrada a altura e o sexo de uma pessoa,
-# construa um programa que calcule seu peso ideal, utilizando as seguintes fórmulas:
-# Peso ideal para homens: (72.7*h) – 58,
-# peso ideal para mulheres: (62.1*h) - 44.7 (onde h é igual a altura em metros).
+=begin
+Recebendo como entrada a altura e o sexo de uma pessoa,
+construa um programa que calcule seu peso ideal, utilizando as seguintes fórmulas:
+Peso ideal para homens: (72.7*h) – 58,
+peso ideal para mulheres: (62.1*h) - 44.7 (onde h é igual a altura em metros).
+=end
 
 puts("Informe sua altura em metros: ")
 altura = gets.chomp.to_f

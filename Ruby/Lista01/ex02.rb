@@ -1,6 +1,8 @@
-# Faça um programa que receba dois números do usuário e guarde nas variáveis A e B. Em
-# seguida, calcule a soma, a subtração, a multiplicação e divisão de A por B. Imprima cada um
-# dos resultados.
+=begin
+Faça um programa que receba dois números do usuário e guarde nas variáveis A e B. Em
+seguida, calcule a soma, a subtração, a multiplicação e divisão de A por B. Imprima cada um
+dos resultados.
+=end
 
 puts("Informe o primeiro número: ")
 primeiro_numero = gets.chomp.to_i
