@@ -3,13 +3,9 @@ Escreva um programa que leia três valores inteiros que serão armazenados nas v
 Então, o programa calcula e exibe a soma e o produto desses valores.
 =end
 
-puts("Informe um número: ")
+puts("Informe três números inteiros: ")
 x = gets.chomp.to_i
-
-puts("Informe um número: ")
 y = gets.chomp.to_i
-
-puts("Informe um número: ")
 z = gets.chomp.to_i
 
 soma = x + y + z
