@@ -1,26 +1,26 @@
-insert into artigo (titulo, nota, idioma)
+INSERT INTO Artigo (titulo, nota, idioma)
 VALUES
-    ('titulo 1', '100', 'inglês'),
-    ('titulo 2', '80', 'inglês'),
-    ('titulo 3', '100', 'português'),
-    ('titulo 4', '100', 'português'),
-    ('titulo 5', '80', 'alemão'),
-    ('titulo 6', '100', 'português'),
-    ('titulo 7', '90', 'inglês'),
-    ('titulo 8', '90', 'português'),
-    ('titulo 9', '90', 'alemão'),
-    ('titulo 10', '90', 'inglês'),
-    ('titulo 11', '100', 'italiano'),
-    ('titulo 12', '90', 'italiano'),
-    ('titulo 13', '80', 'italiano'),
-    ('titulo 14', '100', 'francês'),
-    ('titulo 15', '80', 'francês'),
-    ('titulo 16', '70', 'português'),
-    ('titulo 17', '80', 'francês'),
-    ('titulo 18', '90', 'inglês'),
-    ('titulo 19', '80', 'italiano'),
-    ('titulo 20', '100', 'alemão’),
-    ('titulo 21', '60', 'inglês'),;
+    ('titulo 1', 10, 'inglês'),
+    ('titulo 2', 8, 'inglês'),
+    ('titulo 3', 10, 'português'),
+    ('titulo 4', 10, 'português'),
+    ('titulo 5', 8, 'alemão'),
+    ('titulo 6', 6, 'português'),
+    ('titulo 7', 9, 'inglês'),
+    ('titulo 8', 9, 'português'),
+    ('titulo 9', 9, 'alemão'),
+    ('titulo 10', 9, 'inglês'),
+    ('titulo 11', 10, 'italiano'),
+    ('titulo 12', 9, 'italiano'),
+    ('titulo 13', 8, 'italiano'),
+    ('titulo 14', 10, 'francês'),
+    ('titulo 15', 8, 'francês'),
+    ('titulo 16', 7, 'português'),
+    ('titulo 17', 8, 'francês'),
+    ('titulo 18', 9, 'inglês'),
+    ('titulo 19', 8, 'italiano'),
+    ('titulo 20', 7, 'alemão'),
+    ('titulo 21', 60, 'inglês');
 
 
 iNSERT INTO pesquisador (cpf, nome, instituicao, data_nascimento, senior) 
