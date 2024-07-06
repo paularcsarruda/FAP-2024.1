@@ -3,7 +3,7 @@ CREATE TABLE Pesquisador (
     nome TEXT,
     instituicao TEXT,
     data_nascimento DATE,
-    senioridade BOOLEAN -- Indicador se é sênior ou não
+    senioridade BOOLEAN -- Indicador se é sênior (true or false)
 );
 
 CREATE TABLE Cargo (
