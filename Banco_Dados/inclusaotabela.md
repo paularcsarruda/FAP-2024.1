@@ -282,9 +282,9 @@ VALUES
     ('00000000028', 9, 8);  -- Estagiário no Projeto 8
     
 SELECT ca.descricao AS cargo,
-       COUNT(pes.cpf_pesquisador) AS quantidade_pesquisadores
+       COUNT(pes.pesquisador_cpf) AS quantidade_pesquisadores
 FROM cargo ca
-RIGHT JOIN pesquisador_cargo pes ON ca.codigo = pes.codigo_cargo
+RIGHT JOIN pesquisador_cargo pes ON ca.codigo = pes.cargo_codigo
 GROUP BY ca.descricao;
 
 SELECT A.*
