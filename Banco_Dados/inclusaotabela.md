@@ -1,3 +1,17 @@
+INSERT INTO cargo (descricao)
+VALUES
+    ('Coordenador'),
+    ('Pesquisador Principal'),
+    ('Pesquisador Assistente'),
+    ('Analista de Dados'),
+    ('Gerente de Projeto'),
+    ('Pesquisador Chefe'),
+    ('Especialista em Tecnologia'),
+    ('Pesquisador Júnior'),
+    ('Pesquisador Sênior'),
+    ('Estagiário'),
+    ('Assistente de Pesquisa');
+    
 INSERT INTO Artigo (titulo, nota, idioma)
 VALUES
     ('titulo 1', 10, 'inglês'),
@@ -71,31 +85,33 @@ VALUES
     ('2021-04-19', '00000000027');
     
 
-INSERT into projeto (descricao, valor, codigo_comissao)
+INSERT INTO Projeto (descricao, valor)
 VALUES
-    ('projeto 1', '1000', 1),
-    ('projeto 2', '2000', 2),
-    ('projeto 3', '1000', 3),
-    ('projeto 4', '2000', 4),
-    ('projeto 5', '4000', 5),
-    ('projeto 6', '4000', 6),
-    ('projeto 7', '5000', 7),
-    ('projeto 8', '6000', 8),
-    ('projeto 9', '5000', 9),
-    ('projeto 10', '7000', 10),;
+    ('projeto 1', 1000),
+    ('projeto 2', 2000),
+    ('projeto 3', 1000),
+    ('projeto 4', 2000),
+    ('projeto 5', 4000),
+    ('projeto 6', 4000),
+    ('projeto 7', 5000),
+    ('projeto 8', 6000),
+    ('projeto 9', 5000),
+    ('projeto 10', 7000);
 
-Insert into atividade (descricao, codigo_projeto)
-Values
-    ('atividade 1', 5),
-    ('atividade 2', 5),
-    ('atividade 3', 1),
-    ('atividade 4', 2),
-    ('atividade 5', 3),
-    ('atividade 6', 4),
-    ('atividade 7', 5),
-    ('atividade 8', 6),
-    ('atividade 9', 7),
-    ('atividade 10', 8);
+
+INSERT INTO Atividade (descricao, data_inicio, duracao, projeto_codigo, supervisor_cpf)
+VALUES
+    ('atividade 1', '2024-09-09', '45', 5, '00000000020'),
+    ('atividade 2', '2024-10-09', '45', 5, '00000000019'),
+    ('atividade 3', '2023-12-12', '60', 1, '00000000018'),
+    ('atividade 4', '2023-02-02', '60', 2, '00000000017'),
+    ('atividade 5', '2022-10-09', '60', 3, '00000000016'),
+    ('atividade 6', '2022-03-03', '100', 4, '00000000015'),
+    ('atividade 7', '2021-07-07', '100', 5, '00000000014'),
+    ('atividade 8', '2021-06-16', '60', 6, '00000000013'),
+    ('atividade 9', '2020-09-09', '100', 7, '00000000012'),
+    ('atividade 10', '2024-12-30', '45', 8, '00000000011');
+
 
 insert into subatividade (descricao, codigo_atividade)
 VALUES
@@ -158,7 +174,7 @@ VALUES
     ('00000000010', 10),
     ('00000000011', 11);
 
-insert into pessquisador_comissao (pesquisador_cpf, comissao_codigo)
+insert into pesquisador_comissao (pesquisador_cpf, comissao_codigo)
 values
     ('00000000015', 1), --vários pesquisadores podem fazer parte de uma comisao
     ('00000000014', 2),
@@ -195,7 +211,7 @@ VALUES
     ('00000000008', 10),
     ('00000000005', 10),
     ('00000000006', 10),
-    ('00000000011', 2),;
+    ('00000000011', 2);
 
 INSERT INTO Pesquisador_Artigo (pesquisador_cpf, artigo_matricula)
 VALUES
@@ -208,7 +224,7 @@ VALUES
     ('00000000021', 14),
     ('00000000002', 10),
     ('00000000003', 10),
-    ('00000000011', 14),;
+    ('00000000011', 14);
 
 insert into Artigo_Evento (artigo_matricula, evento_codigo)
 values
@@ -232,6 +248,38 @@ values
     (21, 16),
     (5, 16),
     (16, 16);
+
+INSERT INTO pesquisador_cargo (pesquisador_cpf, cargo_codigo, projeto_codigo)
+VALUES
+    ('00000000001', 1, 1),  -- Coordenador no Projeto 1
+    ('00000000001', 2, 1),  -- Pesquisador Principal no Projeto 1
+    ('00000000002', 3, 2),  -- Pesquisador Assistente no Projeto 2
+    ('00000000003', 4, 3),  -- Analista de Dados no Projeto 3
+    ('00000000004', 5, 4),  -- Gerente de Projeto no Projeto 4
+    ('00000000005', 6, 5),  -- Pesquisador Chefe no Projeto 5
+    ('00000000006', 7, 6),  -- Especialista em Tecnologia no Projeto 6
+    ('00000000007', 8, 7),  -- Pesquisador Sênior no Projeto 7
+    ('00000000008', 9, 8),  -- Estagiário no Projeto 8
+    ('00000000009', 10, 9), -- Assistente de Pesquisa no Projeto 9
+    ('00000000010', 10, 10),-- Assistente de Pesquisa no Projeto 10
+    ('00000000011', 7, 1),  -- Pesquisador Sênior no Projeto 1
+    ('00000000012', 10, 2), -- Assistente de Pesquisa no Projeto 2
+    ('00000000013', 8, 3),  -- Pesquisador Júnior no Projeto 3
+    ('00000000014', 8, 4),  -- Pesquisador Júnior no Projeto 4
+    ('00000000015', 6, 5),  -- Especialista em Tecnologia no Projeto 5
+    ('00000000016', 7, 6),  -- Pesquisador Sênior no Projeto 6
+    ('00000000017', 9, 7),  -- Estagiário no Projeto 7
+    ('00000000018', 8, 8),  -- Pesquisador Júnior no Projeto 8
+    ('00000000019', 10, 9), -- Assistente de Pesquisa no Projeto 9
+    ('00000000020', 10, 10),-- Assistente de Pesquisa no Projeto 10
+    ('00000000021', 9, 1),  -- Estagiário no Projeto 1
+    ('00000000022', 7, 2),  -- Pesquisador Sênior no Projeto 2
+    ('00000000023', 7, 3),  -- Pesquisador Sênior no Projeto 3
+    ('00000000024', 8, 4),  -- Pesquisador Júnior no Projeto 4
+    ('00000000025', 10, 5), -- Assistente de Pesquisa no Projeto 5
+    ('00000000026', 6, 6),  -- Especialista em Tecnologia no Projeto 6
+    ('00000000027', 7, 7),  -- Pesquisador Sênior no Projeto 7
+    ('00000000028', 9, 8);  -- Estagiário no Projeto 8
     
 SELECT ca.descricao AS cargo,
        COUNT(pes.cpf_pesquisador) AS quantidade_pesquisadores
