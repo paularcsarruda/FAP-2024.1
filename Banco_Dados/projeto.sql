@@ -3,7 +3,7 @@ CREATE TABLE Pesquisador (
     nome TEXT,
     instituicao TEXT,
     data_nascimento DATE,
-    senioridade BOOLEAN -- Indicador se é sênior (true or false)
+    senior BOOLEAN -- Indicador se é sênior (true or false)
 );
 
 CREATE TABLE Cargo (
@@ -38,7 +38,7 @@ CREATE TABLE Atividade (
 CREATE TABLE Artigo (
     matricula SERIAL PRIMARY KEY,
     titulo TEXT,
-    nota NUMERIC(3, 1), -- Exemplo de tipo de dado para nota
+    nota NUMERIC(3, 1),
     idioma TEXT
 );
 
