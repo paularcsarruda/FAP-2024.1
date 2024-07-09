@@ -12,38 +12,38 @@ VALUES
     ('Estagiário'),
     ('Assistente de Pesquisa');
     
-INSERT INTO Artigo (titulo, nota, idioma)
+INSERT INTO Artigo (titulo, nota, idioma, pesquisador_cpf)
 VALUES
-    ('Novas Perspectivas em Neurociência', 9.4, 'inglês'),
-    ('Inteligência Artificial na Indústria Automotiva', 8.9, 'português'),
-    ('Avanços em Energia Nuclear', 7.6, 'francês'),
-    ('Impacto da Tecnologia na Educação', 8.2, 'espanhol'),
-    ('Desenvolvimento de Materiais Avançados', 9.1, 'inglês'),
-    ('Bioética e Questões Contemporâneas', 8.3, 'português'),
-    ('A Revolução dos Veículos Elétricos', 8.7, 'inglês'),
-    ('Inovações em Inteligência Artificial', 9.5, 'espanhol'),
-    ('Tecnologias Emergentes na Área da Saúde', 7.8, 'inglês'),
-    ('Economia Digital: Tendências e Desafios', 8.6, 'francês'),
-    ('Avanços em Engenharia Genética', 9.3, 'português'),
-    ('Integração de Big Data em Análise Empresarial', 7.9, 'inglês'),
-    ('Inovações em Sistemas de Energia Solar', 8.4, 'espanhol'),
-    ('Futuro das Redes 5G e Internet das Coisas', 9.0, 'inglês'),
-    ('Impacto da Inteligência Artificial na Economia', 8.1, 'francês'),
-    ('Avanços em Medicina Regenerativa', 9.7, 'português'),
-    ('Desafios Éticos em Inteligência Artificial', 7.5, 'inglês'),
-    ('Inovações em Agricultura de Precisão', 8.8, 'espanhol'),
-    ('Tecnologia Blockchain e Aplicações Futuras', 9.2, 'inglês'),
-    ('Sustentabilidade e Desenvolvimento Urbano', 8.0, 'português'),
-    ('Avanços em Robótica Médica', 9.6, 'francês'),
-    ('Internet das Coisas na Indústria 4.0', 7.7, 'inglês'),
-    ('Bioinformática: Avanços e Aplicações', 8.5, 'espanhol'),
-    ('Desenvolvimento de Software Seguro', 9.9, 'inglês'),
-    ('Inteligência Artificial na Previsão Climática', 8.3, 'francês'),
-    ('Impacto da Tecnologia Blockchain no Setor Financeiro', 9.4, 'português'),
-    ('Inovações em Tecnologia de Realidade Virtual', 7.8, 'inglês'),
-    ('Desafios e Oportunidades na Cibersegurança', 8.7, 'espanhol'),
-    ('Avanços em Nanotecnologia', 9.1, 'inglês'),
-    ('Inteligência Artificial na Agricultura', 8.2, 'português');
+    ('Novas Perspectivas em Neurociência', 9.4, 'inglês', '00000000001'),
+    ('Inteligência Artificial na Indústria Automotiva', 8.9, 'português', '00000000002'),
+    ('Avanços em Energia Nuclear', 7.6, 'francês', '00000000003'),
+    ('Impacto da Tecnologia na Educação', 8.2, 'espanhol', '00000000004'),
+    ('Desenvolvimento de Materiais Avançados', 9.1, 'inglês', '00000000005'),
+    ('Bioética e Questões Contemporâneas', 8.3, 'português', '00000000006'),
+    ('A Revolução dos Veículos Elétricos', 8.7, 'inglês', '00000000007'),
+    ('Inovações em Inteligência Artificial', 9.5, 'espanhol', '00000000008'),
+    ('Tecnologias Emergentes na Área da Saúde', 7.8, 'inglês', '00000000009'),
+    ('Economia Digital: Tendências e Desafios', 8.6, 'francês', '00000000010'),
+    ('Avanços em Engenharia Genética', 9.3, 'português', '00000000001'),
+    ('Integração de Big Data em Análise Empresarial', 7.9, 'inglês', '00000000002'),
+    ('Inovações em Sistemas de Energia Solar', 8.4, 'espanhol', '00000000003'),
+    ('Futuro das Redes 5G e Internet das Coisas', 9.0, 'inglês', '00000000004'),
+    ('Impacto da Inteligência Artificial na Economia', 8.1, 'francês', '00000000005'),
+    ('Avanços em Medicina Regenerativa', 9.7, 'português', '00000000001'),
+    ('Desafios Éticos em Inteligência Artificial', 7.5, 'inglês', '00000000002'),
+    ('Inovações em Agricultura de Precisão', 8.8, 'espanhol', '00000000003'),
+    ('Tecnologia Blockchain e Aplicações Futuras', 9.2, 'inglês', '00000000004'),
+    ('Sustentabilidade e Desenvolvimento Urbano', 8.0, 'português', '00000000005'),
+    ('Avanços em Robótica Médica', 9.6, 'francês', '00000000006'),
+    ('Internet das Coisas na Indústria 4.0', 7.7, 'inglês', '00000000007'),
+    ('Bioinformática: Avanços e Aplicações', 8.5, 'espanhol', '00000000008'),
+    ('Desenvolvimento de Software Seguro', 9.9, 'inglês', '00000000009'),
+    ('Inteligência Artificial na Previsão Climática', 8.3, 'francês', '00000000010'),
+    ('Impacto da Tecnologia Blockchain no Setor Financeiro', 9.4, 'português', '00000000002'),
+    ('Inovações em Tecnologia de Realidade Virtual', 7.8, 'inglês', '00000000003'),
+    ('Desafios e Oportunidades na Cibersegurança', 8.7, 'espanhol', '00000000004'),
+    ('Avanços em Nanotecnologia', 9.1, 'inglês', '00000000005'),
+    ('Inteligência Artificial na Agricultura', 8.2, 'português', '00000000006');
 
 
 
@@ -91,7 +91,7 @@ VALUES
     ('00000000040', 'Manuela Costa', 'Instituto NN', '2000-07-03', false);
 
 
-INSERT INTO comissao (data_criacao, cpf_pesquisador_responsavel)
+INSERT INTO comissao (data_criacao, responsavel_cpf)
 VALUES
     ('2023-01-01', '00000000001'),
     ('2024-02-01', '00000000003'),
@@ -115,7 +115,7 @@ VALUES
     ('2023-03-22', '00000000018');
     
 
-INSERT INTO Projeto (descricao, valor)
+INSERT INTO Projeto (descricao, valor, pesquisador_cpf)
 VALUES
     ('Projeto A', 5000),
     ('Projeto B', 7000),
