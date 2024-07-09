@@ -11,7 +11,6 @@ CREATE TABLE Cargo (
     descricao TEXT,
     pesquisador_cpf CHAR(11),
     cargo_codigo INT,
-    PRIMARY KEY (cargo_codigo),
     CONSTRAINT fk_pesquisador_cpf_cargo FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf)
 );
 
@@ -20,7 +19,6 @@ CREATE TABLE Projeto (
     descricao TEXT,
     valor NUMERIC(12, 2),
     pesquisador_cpf CHAR(11),
-    primary key (codigo_projeto),
     CONSTRAINT fk_pesquisador_cpf_projeto FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf)
 );
 
@@ -29,7 +27,6 @@ CREATE TABLE Comissao (
     data_criacao DATE,
     responsavel_cpf CHAR(11), -- FK para Pesquisador
    	pesquisador_cpf CHAR(11),
-    PRIMARY KEY (comissao_codigo),
     CONSTRAINT fk_pesquisador_cpf FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf),
     CONSTRAINT fk_responsavel_cpf FOREIGN KEY (responsavel_cpf) REFERENCES Pesquisador(cpf)
 );
@@ -42,7 +39,6 @@ CREATE TABLE Atividade (
     projeto_codigo INT, -- FK para Projeto
     supervisor_cpf CHAR(11), -- FK para Pesquisador
     pesquisador_cpf CHAR(11),
-    PRIMARY KEY (atividade_codigo),
     CONSTRAINT fk_pesquisador_cpf_atividade FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf),
     CONSTRAINT fk_projeto_codigo FOREIGN KEY (projeto_codigo) REFERENCES Projeto(codigo),
     CONSTRAINT fk_supervisor_cpf FOREIGN KEY (supervisor_cpf) REFERENCES Pesquisador(cpf)
@@ -54,7 +50,6 @@ CREATE TABLE Artigo (
     nota NUMERIC(3, 1),
     idioma TEXT,
     pesquisador_cpf CHAR(11),
-    PRIMARY KEY (artigo_matricula),
     CONSTRAINT fk_pesquisador_cpf_artigo FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf)
 );
 
@@ -62,6 +57,5 @@ CREATE TABLE Evento (
     codigo SERIAL PRIMARY KEY,
     sigla TEXT,
     artigo_matricula INT,
-    PRIMARY KEY (evento_codigo),
     CONSTRAINT fk_artigo_matricula_evento FOREIGN KEY (artigo_matricula) REFERENCES Artigo(matricula)
 );
