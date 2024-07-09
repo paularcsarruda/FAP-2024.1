@@ -8,10 +8,7 @@ CREATE TABLE Pesquisador (
 
 CREATE TABLE Cargo (
     codigo SERIAL PRIMARY KEY,
-    descricao TEXT,
-    pesquisador_cpf CHAR(11),
-    cargo_codigo INT,
-    CONSTRAINT fk_pesquisador_cpf_cargo FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf)
+    descricao TEXT
 );
 
 CREATE TABLE Projeto (
