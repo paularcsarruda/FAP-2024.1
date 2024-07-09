@@ -25,8 +25,8 @@ CREATE TABLE Projeto (
 CREATE TABLE Comissao (
     codigo SERIAL PRIMARY KEY,
     data_criacao DATE,
-    responsavel_cpf CHAR(11), -- FK para Pesquisador
-   	pesquisador_cpf CHAR(11),
+    responsavel_cpf CHAR(11), -- FK para Pesquisador responsável
+   	pesquisador_cpf CHAR(11), -- podem existir vários pesquisadores
     CONSTRAINT fk_pesquisador_cpf FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf),
     CONSTRAINT fk_responsavel_cpf FOREIGN KEY (responsavel_cpf) REFERENCES Pesquisador(cpf)
 );
@@ -38,7 +38,7 @@ CREATE TABLE Atividade (
     duracao INTERVAL, -- Intervalo de tempo
     projeto_codigo INT, -- FK para Projeto
     supervisor_cpf CHAR(11), -- FK para Pesquisador
-    pesquisador_cpf CHAR(11),
+    pesquisador_cpf CHAR(11), -- podem existir vários pesquisadores
     CONSTRAINT fk_pesquisador_cpf_atividade FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf),
     CONSTRAINT fk_projeto_codigo FOREIGN KEY (projeto_codigo) REFERENCES Projeto(codigo),
     CONSTRAINT fk_supervisor_cpf FOREIGN KEY (supervisor_cpf) REFERENCES Pesquisador(cpf)
